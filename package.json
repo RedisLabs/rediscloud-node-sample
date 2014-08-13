@@ -1,0 +1,29 @@
+{
+  "name": "rediscloud-node-sample",
+  "version": "0.0.0",
+  "description": "Redis Cloud Node.js Sample",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RedisLabs/rediscloud-node-sample"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "redis"    
+  ],
+  "author": "Redis Labs",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/RedisLabs/rediscloud-node-sample/issues"
+  },
+  "dependencies": {
+    "redis": "^0.12.1",
+    "express": "^4.8.3",
+    "logfmt": "^1.1.2",
+    "ejs": "^1.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Redis Cloud Node.js Sample",
+  "description": "Node.js app demonstarting Redis Cloud at Heroku",
+  "repository": "https://github.com/RedisLabs/rediscloud-node-sample",
+  "logo": "https://s3.amazonaws.com/assets.heroku.com/addons.heroku.com/icons/1028/original.png",
+  "keywords": ["node", "express", "redis", "redis cloud"],
+  "addons": [ "rediscloud:25" ]
+}
