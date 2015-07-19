@@ -4,5 +4,5 @@
   "repository": "https://github.com/RedisLabs/rediscloud-node-sample",
   "logo": "https://s3.amazonaws.com/assets.heroku.com/addons.heroku.com/icons/1028/original.png",
   "keywords": ["node", "express", "redis", "redis cloud"],
-  "addons": [ "rediscloud:25" ]
+  "addons": [ "rediscloud:30" ]
 }
