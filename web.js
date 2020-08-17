@@ -4,8 +4,14 @@ var url = require('url');
 var redis = require('redis');
 
 var redisURL = url.parse(process.env.REDISCLOUD_URL);
-var client = redis.createClient(redisURL.port, redisURL.hostname, {no_ready_check: true});
-client.auth(redisURL.auth.split(":")[1]);
+// You can either pass in your redis lab password as a value to the passowrd key in the options arguments object or alternatively use the client.auth method 
+var client = redis.createClient({
+  no_ready_check: true,
+  url:`redis://${redisURL.href}`,
+  host:redisURL.host,
+  password: process.env.REDIS_PASSWORD
+});
+// client.auth(process.env.REDIS_PASSWORD);
 
 var app = express();
 app.set('views', __dirname + '/views');
